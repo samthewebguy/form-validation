@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fa-solid fa-pen-to-square edit-icon"></i>
+            <h2>Create Your Account</h2>
+        </div>
+        <form action="POST" class="form" id="form" >
+            <div class="form-control">
+                <label for="fullname-input">Full Name</label>
+                <input type="text" name="fullname" id="fullname-input" placeholder="Enter first and last name">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="email-input">Email Address</label>
+                <input type="email" name="email" id="email-input" placeholder="Enter email">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="password-input">Password</label>
+                <input type="password" name="password" id="password-input" placeholder="Enter password">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="confirmpassword-input">Confirm Password</label>
+                <input type="password" name="confirmpassword" id="confirmpassword-input" placeholder="Confirm password">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <span> <label for="checkbox">I agree to all statements in Terms of Service</label></span>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="signin">
+            <span>I'm already a member</span>
+            <span><a href="signin.html">Sign In</a></span>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
